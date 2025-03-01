@@ -1,80 +1,73 @@
-# 🏗 Scaffold-ETH 2
+# Kite AI - Counter Dapp (For Development purpose only)
 
-<h4 align="center">
-  <a href="https://docs.scaffoldeth.io">Documentation</a> |
-  <a href="https://scaffoldeth.io">Website</a>
-</h4>
+Kite AI - Counter Dapp is a decentralized application (dApp) built with **Kite AI chain**, **React Vite**, **Tailwind CSS**, and **Ethers.js**. A blockchain-integrated counter.
 
-🧪 An open-source, up-to-date toolkit for building decentralized applications (dapps) on the Ethereum blockchain. It's designed to make it easier for developers to create and deploy smart contracts and build user interfaces that interact with those contracts.
+## Features
 
-⚙️ Built using NextJS, RainbowKit, Foundry, Wagmi, Viem, and Typescript.
+- **Counter Functionality**: A decentralized counter stored on the blockchain.
+- **Ethereum Integration**: Uses Ethers.js to interact with smart contracts.
+- **Fast & Responsive UI**: Styled with Tailwind CSS for a seamless experience.
+- **Optimized Performance**: Built with Vite for rapid development and loading speed.
 
-- ✅ **Contract Hot Reload**: Your frontend auto-adapts to your smart contract as you edit it.
-- 🪝 **[Custom hooks](https://docs.scaffoldeth.io/hooks/)**: Collection of React hooks wrapper around [wagmi](https://wagmi.sh/) to simplify interactions with smart contracts with typescript autocompletion.
-- 🧱 [**Components**](https://docs.scaffoldeth.io/components/): Collection of common web3 components to quickly build your frontend.
-- 🔥 **Burner Wallet & Local Faucet**: Quickly test your application with a burner wallet and local faucet.
-- 🔐 **Integration with Wallet Providers**: Connect to different wallet providers and interact with the Ethereum network.
+## Tech Stack
 
-![Debug Contracts tab](https://github.com/scaffold-eth/scaffold-eth-2/assets/55535804/b237af0c-5027-4849-a5c1-2e31495cccb1)
+- **Frontend**: React + Vite
+- **Styling**: Tailwind CSS
+- **Blockchain Integration**: Ethers.js
+- **Smart Contracts**: Solidity
+- **Block chain**: Kite AI (Testnet)
 
-## Requirements
+## Installation
 
-Before you begin, you need to install the following tools:
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/gokite-ai/kite_counter_dapp
+   cd kite_counter_dapp
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+3. Start the development server:
+   ```sh
+   npm run dev
+   ```
 
-- [Node (>= v20.18.3)](https://nodejs.org/en/download/)
-- Yarn ([v1](https://classic.yarnpkg.com/en/docs/install/) or [v2+](https://yarnpkg.com/getting-started/install))
-- [Git](https://git-scm.com/downloads)
+## Usage
 
-## Quickstart
+- Connect your Ethereum wallet (MetaMask or any compatible wallet)
+- Add Kite AI Testnet Chain (as custom RPC)
+- Acquire testnet tokens to interact with KITEAI chain 
+- Interact with the blockchain-based counter.
 
-To get started with Scaffold-ETH 2, follow the steps below:
+## KiteAI Testnet network settings
 
-1. Install dependencies if it was skipped in CLI:
+- Chain Name: KiteAI Testnet  
+- Default RPC URL: [https://rpc-testnet.gokite.ai/](https://rpc-testnet.gokite.ai/)  
+- Chain ID: 2368  
+- Token: KITE  
+- Block Explorer URL: [https://testnet.kitescan.ai/](https://testnet.kitescan.ai/)  
 
-```
-cd my-dapp-example
-yarn install
-```
+## KiteAI Testnet Faucet
 
-2. Run a local network in the first terminal:
+Use the below link to get KITE and USDT tokens on testnet
+- [KiteAI testnet Faucet](https://faucet.gokite.ai/)
 
-```
-yarn chain
-```
+## **Contributing**
 
-This command starts a local Ethereum network using Foundry. The network runs on your local machine and can be used for testing and development. You can customize the network configuration in `packages/foundry/foundry.toml`.
+We welcome contributions from the community to improve and expand the **Kite AI - Counter Dapp**. Follow the steps below to contribute effectively.
 
-3. On a second terminal, deploy the test contract:
+### **How to Contribute**
+1. Fork the Repository – Create a copy of the repository under your GitHub account.  
+2. Create a New Branch – Work on a separate branch for each new feature or fix.  
+3. Make Your Changes – Ensure your code follows project structure and best practices.  
+4. Commit and Push** – Write clear commit messages and push your changes.  
+5. Submit a Pull Request (PR) – Open a PR to merge your changes into the `main` branch.  
 
-```
-yarn deploy
-```
+### **Guidelines**
+- Follow the project's code style and branching strategy.  
+- Ensure new features work correctly and do not break existing functionality.  
+- Write clear and descriptive commit messages.  
+- Open an Issue for bug reports, improvements, or feature suggestions.  
 
-This command deploys a test smart contract to the local network. The contract is located in `packages/foundry/contracts` and can be modified to suit your needs. The `yarn deploy` command uses the deploy script located in `packages/foundry/script` to deploy the contract to the network. You can also customize the deploy script.
-
-4. On a third terminal, start your NextJS app:
-
-```
-yarn start
-```
-
-Visit your app on: `http://localhost:3000`. You can interact with your smart contract using the `Debug Contracts` page. You can tweak the app config in `packages/nextjs/scaffold.config.ts`.
-
-Run smart contract test with `yarn foundry:test`
-
-- Edit your smart contracts in `packages/foundry/contracts`
-- Edit your frontend homepage at `packages/nextjs/app/page.tsx`. For guidance on [routing](https://nextjs.org/docs/app/building-your-application/routing/defining-routes) and configuring [pages/layouts](https://nextjs.org/docs/app/building-your-application/routing/pages-and-layouts) checkout the Next.js documentation.
-- Edit your deployment scripts in `packages/foundry/script`
-
-
-## Documentation
-
-Visit our [docs](https://docs.scaffoldeth.io) to learn how to start building with Scaffold-ETH 2.
-
-To know more about its features, check out our [website](https://scaffoldeth.io).
-
-## Contributing to Scaffold-ETH 2
-
-We welcome contributions to Scaffold-ETH 2!
-
-Please see [CONTRIBUTING.MD](https://github.com/scaffold-eth/scaffold-eth-2/blob/main/CONTRIBUTING.md) for more information and guidelines for contributing to Scaffold-ETH 2.
+Thank you for contributing to Kite AI - 🪁 
